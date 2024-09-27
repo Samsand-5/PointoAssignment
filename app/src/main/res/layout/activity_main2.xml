@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO FBUDDY"
+        android:gravity="center"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/bluepic"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textSize="21dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/onbtn"
+        android:minWidth="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginRight="24dp"
+        android:paddingLeft="5dp"
+        android:onClick="TURNON"
+        android:text="TURN ON"
+        android:clickable="true"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/offbtn"
+        android:minWidth="200dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingLeft="5dp"
+        android:clickable="true"
+        android:onClick="TURNOff"
+        android:text="TURN Off"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/disco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingLeft="5dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:onClick="DISCOVARABLE"
+        android:text="DISCOVARABLE"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/paired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        android:clickable="true"
+        android:minWidth="200dp"
+        android:onClick="PAIREDDEVICES"
+        android:paddingLeft="5dp"
+        android:text="GET PAIRED DEVICES"
+        tools:ignore="OnClick" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:id="@+id/pairedtv"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="25dp"/>
+</LinearLayout>
